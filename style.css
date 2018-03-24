@@ -16,7 +16,7 @@ body {
 }
 
 h2 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster';
     text-align: center;
     color: black;
     margin: 10px;
@@ -107,7 +107,30 @@ cursor: pointer;
     background: #CB356B;
 }
 
+.home-container {
+    width: 299px;
+    margin: 0 auto;
 
+}
+
+.home-icon {
+    display: inline-block;
+    width: 130px;
+    height: 140px;
+    margin: 10px 10px 0 0;
+    background: #FEFEFF;
+    -webkit-box-shadow: 1px 1px 2px 0px #333; 
+    box-shadow: 1px 1px 2px 0px #333;
+    border-radius: 2px;
+    color: #31231E;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.home-icon:hover {
+    text-decoration: none;
+}
 
 /* LOADER */
 
