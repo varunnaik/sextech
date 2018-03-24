@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container-fluid">
+          <div class="card" style="width: 14rem; margin: 0 auto; margin-top: 20px;">
+              <div class="card-body">
+                <h5 class="card-title">Me</h5>
+                  <div id="toggle-consent" class="trafficlight red" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"></div><br />
+                <p class="consent-time">10 hours ago, at 5:00PM</p>
+                <!-- <div class="btn">Change my consent</div> -->
+              </div>
+            </div>
+            <div class="card partner" style="width: 14rem; margin: 0 auto; margin-top: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title">My partner</h5>
+                  <div class="trafficlight red"></div><br />
+                  <p class="consent-time">5 minutes ago, at 5:00PM</p>
+                </div>
+              </div>
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.js"  crossorigin="anonymous"></script>
+    <script src="popper.min.js" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+    $('#toggle-consent').tooltip({
+      placement: bottom
+    })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background: #DE6262;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+    min-height: 100vh;
+}
+
+body {
+    color: #434343;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.trafficlight {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.trafficlight.red {
+    background: #CB356B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.btn {
+    display: inline-block;
+box-sizing: content-box;
+background-color: #1abc9c;
+color: #fff;
+font-weight: 700;
+font-size: 12px;
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px 25px;
+border-radius: 30px;
+outline: 0 !important;
+border: 0;
+transition: all .2s ease-in-out;
+cursor: pointer;
+}
+
+.consent-time {
+    color: #666;
+    font-style: italic;
+}
+
+.card.partner {
+    background: #ddd;
+}
