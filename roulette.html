@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <h2>Date Night Roulette</h2>
+
+        <div class='loader'></div>
+
+        <div class="card roulette" id="roulette1" style="width: 90%; margin: 0 auto; margin-top: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">Level 1</h5>
+                <h3>Sensual Shower</h3>
+                <ul class="dash"></ul>
+                <li>Have a shower together - be sure to soap each other up all over (if there’s anywhere you think your partner
+                    missed while cleaning you, let them know)</li>
+                <li>When you’re clean, kiss up and down your partner’s neck and throat - or even their whole body</li>
+                <li>Once dry, take it in turns touching your partner’s body all over with really light touch of your finger tips</li>
+                </ul>
+                <div class="btn">Show me another</div>
+            </div>
+        </div>
+
+        <div class="card roulette"  id="roulette2" style="width: 90%; margin: 0 auto; margin-top: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">Level 1</h5>
+                <h3>Erotic Massage</h3>
+                <ul class="dash"></ul>
+                    <li>Begin my telling you partner something you really respect or appreciate about them</li>
+                    <li>Get out some massage oil (or coconut oil, moisturiser etc) and take it in turns giving each other a back
+                        massage
+                    </li>
+                    <li> Lie down together holding each other and feeling your bodies pressed against each other for a few minutes</li>
+                    <li>Allow your hands to wander all over their body, enjoying the touch and feelings of oil and the slippery
+                        feeling</li>
+                    <li>Include gentle touch of your partners genitals - moving to firmer touch once they give you the go ahead</li>
+                    <div class="btn">Show me another</div>
+                
+            </div>
+        </div>
+
+        <div class="card roulette"  id="roulette3" style="width: 90%; margin: 0 auto; margin-top: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">Level 1</h5>
+                <h3>Intimate Private Date</h3>
+                <ul class="dash"></ul>
+                        <li>Take a bottle of wine - or cups of tea into the backyard or balcony</li>
+                        <li>Tell each other what you first fell in love with about each other</li>
+                        <li>Put on your favourite song and look at each other in the eyes while it plays</li>
+                        <li>Either outside or in bed take it in turns taking off an item of each other’s clothes</li>
+                        <div class="btn btn-red">Subscribe to view more</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.js" crossorigin="anonymous"></script>
+    <script src="popper.min.js" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+        const showLoader = (id) => {
+            $('.roulette').hide();
+            $('.loader').show();
+            setTimeout(() => {
+                $('.loader').hide();
+                $(id).show();
+            }, 900);
+        } 
+
+        showLoader('#roulette1');
+        $('#roulette1 .btn').click(() => showLoader('#roulette2'));
+        $('#roulette2 .btn').click(() => showLoader('#roulette3'));
+    </script>
+</body>
+
+</html>
